@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Fix 777 - Contact</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Vertical logo area - full height on left side */
+        .logo-vertical {
+            background: #2c3e50;
+            color: white;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(180deg);
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 5px;
+            padding: 20px 5px;
+            text-align: center;
+            white-space: nowrap;
+            border-right: 3px solid #f1c40f;
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* If you have an actual logo image, use this instead:
+        .logo-vertical img {
+            height: auto;
+            max-height: 400px;
+            width: auto;
+            max-width: 80px;
+            object-fit: contain;
+        } */
+        .content {
+            flex: 1;
+            padding: 30px;
+        }
+        .headline {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            border-bottom: 4px solid #f1c40f;
+            padding-bottom: 10px;
+        }
+        .images {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .images img {
+            width: calc(50% - 7.5px);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            object-fit: cover;
+            height: 150px;
+        }
+        .images img:hover {
+            transform: scale(1.03);
+        }
+        .contact-bar {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #e0e0e0;
+        }
+        .contact-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            border-color: #f1c40f;
+        }
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .call .contact-icon { background: #27ae60; }
+        .whatsapp .contact-icon { background: #25D366; }
+        .telegram .contact-icon { background: #0088cc; }
+        .contact-detail {
+            flex: 1;
+            font-weight: 500;
+        }
+        .contact-label {
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 2px;
+        }
+        /* Make entire card flex row for vertical logo */
+        .card {
+            flex-direction: row;
+        }
+        @media (max-width: 600px) {
+            .card {
+                flex-direction: column;
+            }
+            .logo-vertical {
+                writing-mode: horizontal-tb;
+                transform: none;
+                border-right: none;
+                border-bottom: 3px solid #f1c40f;
+                padding: 15px;
+            }
+            .images img {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Vertical Logo Area -->
+        <div class="logo-vertical">
+            <!-- If you have an image logo, replace the text with <img src="logo.png" alt="Date Fix 777 Logo"> -->
+            DATE FIX 777
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1 class="headline">Welcome to Date Fix 777</h1>
+
+            <!-- Two Images -->
+            <div class="images">
+                <!-- REPLACE THESE WITH YOUR DIRECT IMAGE LINKS -->
+                <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1">
+                <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2">
+                <!-- Use actual working URLs like: https://i.imgur.com/YourImage.jpg -->
+            </div>
+
+            <!-- Contact Bar -->
+            <div class="contact-bar">
+                <!-- Call -->
+                <a href="tel:+919113224019" class="contact-item call">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-detail">
+                        <div>+91 91132 24019</div>
+                        <div class="contact-label">Call</div>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/919113224019" class="contact-item whatsapp" target="_blank">
+                    <div class="contact-icon">💬</div>
+                    <div class="contact-detail">
+                        <div>+91 91132 24019</div>
+                        <div class="contact-label">WhatsApp</div>
+                    </div>
+                </a>
+
+                <!-- Telegram -->
+                <a href="https://t.me/rudrakshankg" class="contact-item telegram" target="_blank">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-detail">
+                        <div>@rudrakshankg</div>
+                        <div class="contact-label">Telegram</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
