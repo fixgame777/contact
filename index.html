@@ -2,239 +2,356 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp + Telegram – Professional Logo Layouts (SVG)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>📅 DATE FIX 777 · contact</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font: Poppins + fallback -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
+
         body {
-            background: linear-gradient(145deg, #f1f5f9 0%, #e6edf5 100%);
             min-height: 100vh;
+            background: radial-gradient(circle at 10% 30%, #1e1f2b, #0c0d16);
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
+            padding: 1.5rem;
         }
-        .container {
-            max-width: 1300px;
+
+        .glass-card {
+            max-width: 1000px;
             width: 100%;
+            background: rgba(20, 22, 36, 0.7);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            border-radius: 3.5rem;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(255, 215, 0, 0.1) inset;
+            transition: all 0.3s ease;
         }
-        h1 {
+
+        /* headline */
+        .hero-title {
             text-align: center;
-            font-weight: 500;
-            font-size: 2.5rem;
-            letter-spacing: -0.02em;
-            margin-bottom: 2.5rem;
-            background: linear-gradient(145deg, #0f172a, #334155);
+            font-size: clamp(2.2rem, 8vw, 4.2rem);
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: linear-gradient(145deg, #f9e281, #ffb347, #ff8c00);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px #ffb34760, 0 0 40px #ff7b00;
         }
-        .card {
-            background: rgba(255,255,255,0.9);
-            backdrop-filter: blur(10px);
-            border-radius: 3rem;
-            box-shadow: 0 25px 45px -12px rgba(0,0,0,0.25), 0 0 0 1px rgba(255,255,255,0.7) inset;
-            padding: 3.5rem 3rem;
-            margin-bottom: 3rem;
-            transition: transform 0.2s ease, box-shadow 0.2s;
+
+        .hero-title span {
+            font-weight: 700;
+            background: linear-gradient(145deg, #ffffff, #ffe18a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            display: inline-block;
+            filter: drop-shadow(0 0 12px gold);
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 32px 55px -15px rgba(0,0,0,0.3);
-        }
-        .card-title {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-            font-size: 1.8rem;
-            font-weight: 480;
-            color: #0b1e33;
-            border-bottom: 2px solid #cbd5e1;
-            padding-bottom: 0.8rem;
-            margin-bottom: 2.5rem;
-        }
-        .card-title span {
-            background: #2563eb;
-            color: white;
+
+        .sub-glow {
+            text-align: center;
+            color: #b9b9d3;
+            font-weight: 300;
             font-size: 1.2rem;
-            font-weight: 500;
-            padding: 0.2rem 1rem;
-            border-radius: 40px;
-        }
-        /* Horizontal layout */
-        .horizontal {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 7rem;
-            flex-wrap: wrap;
-            padding: 1.5rem 0;
-        }
-        .logo-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1.2rem;
-        }
-        .logo-box svg {
-            width: 120px;
-            height: 120px;
-            filter: drop-shadow(0 8px 18px rgba(0,0,0,0.15));
-            transition: transform 0.2s;
-        }
-        .logo-box svg:hover {
-            transform: scale(1.03);
-        }
-        .logo-box .label {
-            font-size: 1.8rem;
-            font-weight: 500;
-            color: #1e293b;
-            background: rgba(255,255,255,0.7);
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+            border-bottom: 1px dashed #f0b34b50;
+            padding-bottom: 1rem;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
             backdrop-filter: blur(4px);
-            padding: 0.3rem 2rem;
-            border-radius: 60px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
-        /* Vertical layout */
-        .vertical {
+
+        /* image duo */
+        .image-panel {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 3.5rem;
-            padding: 1rem 0;
-        }
-        .vertical .logo-box {
-            flex-direction: row;
-            gap: 3rem;
-            width: 100%;
+            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 2.5rem 0 3rem 0;
         }
-        .vertical .logo-box svg {
-            width: 100px;
-            height: 100px;
+
+        .image-panel img {
+            width: min(240px, 100%);
+            height: auto;
+            border-radius: 2.5rem;
+            box-shadow: 0 25px 40px -10px black, 0 0 0 2px rgba(255, 200, 70, 0.4), 0 0 30px #ffae0060;
+            transition: 0.25s ease-in-out;
+            background: linear-gradient(145deg, #2f2f42, #1a1b28);
+            padding: 0.35rem;
+            object-fit: cover;
+            aspect-ratio: 1/1;
         }
-        .vertical .logo-box .label {
-            font-size: 2.2rem;
+
+        .image-panel img:hover {
+            transform: scale(1.04) rotate(1deg);
+            box-shadow: 0 35px 55px -10px #000, 0 0 0 3px #ffc107, 0 0 45px #ffcc33;
+            border-color: gold;
         }
-        /* size hints */
-        .size-info {
-            background: #e0f2fe;
-            border-radius: 2rem;
-            padding: 1.2rem 2rem;
-            margin-top: 2.5rem;
-            border-left: 8px solid #0284c7;
-            font-size: 1.1rem;
-            color: #075985;
-        }
-        .size-info strong {
-            font-weight: 600;
-            color: #0369a1;
-        }
-        hr {
-            border: none;
-            border-top: 3px dashed #9aa9b9;
-            margin: 3rem 0 2.5rem;
-        }
-        .note {
-            background: white;
-            border-radius: 2rem;
-            padding: 1.8rem;
-            box-shadow: 0 8px 18px rgba(0,0,0,0.05);
-            font-size: 1.1rem;
-        }
-        .note code {
-            background: #1e293b;
-            color: #fbbf24;
-            padding: 0.2rem 0.8rem;
-            border-radius: 30px;
-            font-family: 'Courier New', monospace;
-        }
-        .flex {
+
+        /* telegram callout */
+        .telegram-message {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(145deg, #c0d7ff, #a0c0ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+            margin: 1.2rem 0 2.5rem 0;
+            text-shadow: 0 0 10px #0088cc;
+        }
+
+        .telegram-message i {
+            font-size: 3rem;
+            color: #29a9e1;
+            filter: drop-shadow(0 0 12px #29a9e1);
+        }
+
+        /* action buttons */
+        .action-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2.8rem 0 2rem;
+        }
+
+        .btn {
+            border: none;
+            background: rgba(18, 20, 33, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 1.2rem 2.5rem;
+            border-radius: 4rem;
+            font-weight: 600;
+            font-size: 1.4rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            color: white;
+            border: 1.5px solid rgba(255, 215, 0, 0.3);
+            cursor: pointer;
+            transition: 0.2s;
+            text-decoration: none;
+            flex: 1 1 240px;
+            min-width: 240px;
+            box-shadow: 0 12px 30px -8px #00000080;
+        }
+
+        .btn i {
+            font-size: 2rem;
+        }
+
+        .btn-telegram {
+            background: linear-gradient(125deg, #1c2a44, #0e1a2b);
+            border-color: #2aa2d4;
+        }
+
+        .btn-telegram:hover {
+            background: linear-gradient(125deg, #235b8c, #0e2f4b);
+            border-color: #6ec3ff;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -8px #0088cc, 0 0 0 2px #8fcbff;
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(145deg, #1f3b2c, #0e2a1a);
+            border-color: #25d366;
+        }
+
+        .btn-whatsapp:hover {
+            background: linear-gradient(145deg, #1f7943, #175c30);
+            border-color: #98f0b2;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -8px #25d366, 0 0 0 2px #b7f9cf;
+        }
+
+        .btn-call {
+            background: linear-gradient(145deg, #352c1f, #221d12);
+            border-color: #ffae42;
+            font-size: 1.3rem;
+            padding: 1rem 2rem;
+        }
+
+        .btn-call:hover {
+            background: linear-gradient(145deg, #5f4b28, #3e311b);
+            border-color: #ffc285;
+            transform: scale(1.02);
+            box-shadow: 0 0 25px #f5b042;
+        }
+
+        .whatsapp-text {
+            font-size: 1.2rem;
+            color: #d1d1e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 1rem;
             flex-wrap: wrap;
+            margin-top: 2rem;
+            padding: 1.2rem 1.5rem;
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 60px;
+            backdrop-filter: blur(8px);
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #ffd96660;
+        }
+
+        .whatsapp-text .phone-number {
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(145deg, #fff1b8, #ffd966);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: 2px;
+        }
+
+        .or-call-divider {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            color: #c9c9e0;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        .fa-phone-alt {
+            color: #ffb347;
+        }
+
+        /* extra micro */
+        .note-app {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #7f809b;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .note-app i {
+            color: gold;
+            margin-right: 6px;
+        }
+
+        hr {
+            border: 0.5px solid #ffd96630;
+            margin: 2rem 0 0.5rem;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* mobile fine-tune */
+        @media (max-width: 600px) {
+            .glass-card {
+                padding: 2rem 1.2rem;
+                border-radius: 2.5rem;
+            }
+            .btn {
+                font-size: 1.2rem;
+                padding: 1rem 1.5rem;
+                min-width: 200px;
+            }
+            .telegram-message {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>📱 WhatsApp + Telegram — professional SVG logos</h1>
-
-        <!-- HORIZONTAL LAYOUT (e.g., 1200x630) -->
-        <div class="card">
-            <div class="card-title">
-                <span>H</span> Horizontal — side by side
-            </div>
-            <div class="horizontal">
-                <!-- WhatsApp logo box -->
-                <div class="logo-box">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.88.52 3.64 1.42 5.16L2.2 21.2l4.1-1.2C7.76 20.88 9.82 21.5 12 21.5c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="#25D366"/>
-                        <path d="M17.1 14.2c-.3.8-1.4 1.5-2.3 1.5-.6 0-1.2-.3-1.8-.5-1.4-.5-2.7-1.5-3.8-2.7-1-1.1-1.8-2.5-2.1-3.9-.2-.7-.2-1.3 0-1.8.2-.5.5-.9 1-1.2.2-.1.5-.2.7-.2h.5c.2 0 .5.2.6.4.3.6.8 1.5.9 1.6.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.5.6-.2.2-.3.5-.1.8.4.8 1.1 1.6 1.9 2.2.8.6 1.7 1 2.6 1.2.2.1.5 0 .7-.2.2-.2.5-.5.7-.7.2-.2.4-.3.7-.2.3.1 1.4.7 1.6.8.2.1.4.3.4.5-.1.4-.3.8-.6 1.1z" fill="white"/>
-                    </svg>
-                    <span class="label">WhatsApp</span>
-                </div>
-                <!-- Telegram logo box -->
-                <div class="logo-box">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#26A5E4"/>
-                        <path d="M16.5 7.5l-2 9.5s-.2.5-.8.3l-4-3-1.5-1 2.5-2.5 4 3 1.5-6z" fill="white"/>
-                        <path d="M10.2 13.8l-.5 3.5s-.1.5.4.5l2-2 3-2-5-2z" fill="white"/>
-                    </svg>
-                    <span class="label">Telegram</span>
-                </div>
-            </div>
-            <div class="size-info">
-                <strong>📐 Recommended size:</strong> 1200px width × 630px height — ideal for horizontal banners, link previews, or header ads.
-            </div>
+    <div class="glass-card">
+        <!-- main headline -->
+        <div class="hero-title">
+            WELCOME <span>DATE FIX 777</span>
+        </div>
+        <div class="sub-glow">
+            <i class="fas fa-star" style="color: #ffc107; margin-right: 8px;"></i> 
+            your premium contact zone 
+            <i class="fas fa-star" style="color: #ffc107; margin-left: 8px;"></i>
         </div>
 
-        <!-- VERTICAL LAYOUT (e.g., 1080x1350) -->
-        <div class="card">
-            <div class="card-title">
-                <span>V</span> Vertical — stacked
-            </div>
-            <div class="vertical">
-                <div class="logo-box">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.477 2 2 6.477 2 12c0 1.88.52 3.64 1.42 5.16L2.2 21.2l4.1-1.2C7.76 20.88 9.82 21.5 12 21.5c5.523 0 10-4.477 10-10S17.523 2 12 2z" fill="#25D366"/>
-                        <path d="M17.1 14.2c-.3.8-1.4 1.5-2.3 1.5-.6 0-1.2-.3-1.8-.5-1.4-.5-2.7-1.5-3.8-2.7-1-1.1-1.8-2.5-2.1-3.9-.2-.7-.2-1.3 0-1.8.2-.5.5-.9 1-1.2.2-.1.5-.2.7-.2h.5c.2 0 .5.2.6.4.3.6.8 1.5.9 1.6.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.5.6-.2.2-.3.5-.1.8.4.8 1.1 1.6 1.9 2.2.8.6 1.7 1 2.6 1.2.2.1.5 0 .7-.2.2-.2.5-.5.7-.7.2-.2.4-.3.7-.2.3.1 1.4.7 1.6.8.2.1.4.3.4.5-.1.4-.3.8-.6 1.1z" fill="white"/>
-                    </svg>
-                    <span class="label">WhatsApp</span>
-                </div>
-                <div class="logo-box">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#26A5E4"/>
-                        <path d="M16.5 7.5l-2 9.5s-.2.5-.8.3l-4-3-1.5-1 2.5-2.5 4 3 1.5-6z" fill="white"/>
-                        <path d="M10.2 13.8l-.5 3.5s-.1.5.4.5l2-2 3-2-5-2z" fill="white"/>
-                    </svg>
-                    <span class="label">Telegram</span>
-                </div>
-            </div>
-            <div class="size-info">
-                <strong>📐 Recommended size:</strong> 1080px width × 1350px height — perfect for Instagram posts, stories, or vertical ad creatives.
-            </div>
+        <!-- two images (professional / attractive) -->
+        <div class="image-panel">
+            <img src="https://i.imgur.com/rL2HWaA.jpeg" alt="date fix 777 visual 1" loading="lazy">
+            <img src="https://i.imgur.com/j0PL1Ay.jpeg" alt="date fix 777 visual 2" loading="lazy">
         </div>
 
+        <!-- telegram channel promo (exact text) -->
+        <div class="telegram-message">
+            <i class="fab fa-telegram-plane"></i> 
+            JOIN TELEGRAM CHANNEL FOR FREE GAME 
+            <i class="fab fa-telegram-plane"></i>
+        </div>
+
+        <!-- big fat action row: Telegram & WhatsApp direct buttons (open in app) -->
+        <div class="action-row">
+            <!-- telegram direct link -->
+            <a href="https://t.me/datefix777" target="_blank" rel="noopener noreferrer" class="btn btn-telegram">
+                <i class="fab fa-telegram"></i> Telegram channel
+            </a>
+            <!-- whatsapp direct link (wa.me) -->
+            <a href="https://wa.me/919113224019?text=Hello%20DATE%20FIX%20777%2C%20I'm%20interested%20in%20your%20service" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp chat
+            </a>
+        </div>
+
+        <!-- WhatsApp number + OR CALL section exactly as requested -->
+        <div class="whatsapp-text">
+            <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25d366; filter: drop-shadow(0 0 12px #25d366);"></i>
+            <span class="phone-number">+919113224019</span>
+            <span class="or-call-divider">
+                <span style="font-size: 1.5rem; color: #ffe087;">⚡</span> OR CALL <span style="font-size: 1.5rem; color: #ffe087;">⚡</span>
+            </span>
+            <!-- direct call button (tel: for mobile / pc fallback) -->
+            <a href="tel:+919113224019" class="btn btn-call" style="flex: 0 1 auto; padding: 0.7rem 1.8rem; font-size: 1.3rem;">
+                <i class="fas fa-phone-alt"></i> Call now
+            </a>
+        </div>
+
+        <!-- extra micro info: both links open directly in app (Telegram / WhatsApp) -->
         <hr>
-
-        <div class="note">
-            <p style="font-size: 1.4rem; margin-bottom: 1rem;">✅ <strong>Fully self-contained — no external dependencies</strong></p>
-            <p style="margin-bottom: 1rem;">The logos are embedded as inline SVG, so they will always look sharp. You can easily change colors, sizes, or add backgrounds.</p>
-            <p style="margin-bottom: 1rem;"><strong>To use your own images instead:</strong><br>
-            Replace the entire <code>&lt;svg&gt;...&lt;/svg&gt;</code> with an <code>&lt;img&gt;</code> tag, e.g.:<br>
-            <code>&lt;img src="your-whatsapp-logo.png" width="120" height="120" alt="WhatsApp"&gt;</code></p>
-            <p>Make sure your images are high-resolution (preferably PNG with transparency) for the best result.</p>
+        <div class="note-app">
+            <span><i class="fas fa-check-circle"></i> Telegram opens in app</span>
+            <span><i class="fas fa-check-circle"></i> WhatsApp opens in app</span>
+            <span><i class="fas fa-mobile-alt"></i> One tap call</span>
         </div>
 
-        <div style="text-align: center; margin-top: 2.5rem; color: #334155;">
-            ⚙️ Adjust spacing, colors, and background in the &lt;style&gt; section to match your brand.
+        <!-- tiny telegram link fallback (exact link also visible) but not intrusive -->
+        <div style="text-align: center; margin-top: 1.2rem; font-size: 0.9rem; opacity: 0.6; color: #b0b0d0;">
+            t.me/datefix777  |  wa.me/919113224019
         </div>
     </div>
+
+    <!-- small note: ensures that telegram & whatsapp links are app-backed. For extra reliability, also support tg:? but https works fine -->
 </body>
 </html>
