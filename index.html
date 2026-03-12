@@ -6,7 +6,7 @@
     <title>📅 DATE FIX 777 · contact</title>
     <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Font: Poppins + fallback -->
+    <!-- Google Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap" rel="stylesheet">
     <style>
         * {
@@ -26,7 +26,7 @@
         }
 
         .glass-card {
-            max-width: 1000px;
+            max-width: 1200px;      /* slightly larger to accommodate bigger images */
             width: 100%;
             background: rgba(20, 22, 36, 0.7);
             backdrop-filter: blur(16px) saturate(180%);
@@ -35,7 +35,6 @@
             border-radius: 3.5rem;
             padding: 3rem 2.5rem;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(255, 215, 0, 0.1) inset;
-            transition: all 0.3s ease;
         }
 
         /* headline */
@@ -59,7 +58,6 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            display: inline-block;
             filter: drop-shadow(0 0 12px gold);
         }
 
@@ -69,64 +67,38 @@
             font-weight: 300;
             font-size: 1.2rem;
             letter-spacing: 2px;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             border-bottom: 1px dashed #f0b34b50;
             padding-bottom: 1rem;
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
-            backdrop-filter: blur(4px);
         }
 
-        /* image duo */
+        /* image duo — larger now */
         .image-panel {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 2rem;
-            margin: 2.5rem 0 3rem 0;
+            gap: 2.5rem;
+            margin: 2rem 0 2.5rem 0;
         }
 
         .image-panel img {
-            width: min(240px, 100%);
-            height: auto;
+            width: min(380px, 100%);   /* significantly bigger, up to 380px */
+            height: auto;               /* keep original proportions, no forced square */
             border-radius: 2.5rem;
             box-shadow: 0 25px 40px -10px black, 0 0 0 2px rgba(255, 200, 70, 0.4), 0 0 30px #ffae0060;
             transition: 0.25s ease-in-out;
             background: linear-gradient(145deg, #2f2f42, #1a1b28);
             padding: 0.35rem;
-            object-fit: cover;
-            aspect-ratio: 1/1;
+            object-fit: cover;          /* covers the area, but respects ratio */
         }
 
         .image-panel img:hover {
-            transform: scale(1.04) rotate(1deg);
+            transform: scale(1.03) rotate(0.5deg);
             box-shadow: 0 35px 55px -10px #000, 0 0 0 3px #ffc107, 0 0 45px #ffcc33;
-            border-color: gold;
-        }
-
-        /* telegram callout */
-        .telegram-message {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(145deg, #c0d7ff, #a0c0ff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.7rem;
-            flex-wrap: wrap;
-            margin: 1.2rem 0 2.5rem 0;
-            text-shadow: 0 0 10px #0088cc;
-        }
-
-        .telegram-message i {
-            font-size: 3rem;
-            color: #29a9e1;
-            filter: drop-shadow(0 0 12px #29a9e1);
         }
 
         /* action buttons */
@@ -194,7 +166,7 @@
             background: linear-gradient(145deg, #352c1f, #221d12);
             border-color: #ffae42;
             font-size: 1.3rem;
-            padding: 1rem 2rem;
+            padding: 0.7rem 1.8rem;
         }
 
         .btn-call:hover {
@@ -246,7 +218,6 @@
             color: #ffb347;
         }
 
-        /* extra micro */
         .note-app {
             text-align: center;
             margin-top: 2rem;
@@ -280,10 +251,10 @@
             .btn {
                 font-size: 1.2rem;
                 padding: 1rem 1.5rem;
-                min-width: 200px;
             }
-            .telegram-message {
-                font-size: 1.4rem;
+            .image-panel img {
+                width: 100%;           /* full width on small screens, still large */
+                max-width: 340px;
             }
         }
     </style>
@@ -300,20 +271,13 @@
             <i class="fas fa-star" style="color: #ffc107; margin-left: 8px;"></i>
         </div>
 
-        <!-- two images (professional / attractive) -->
+        <!-- two images – now bigger, join telegram line removed -->
         <div class="image-panel">
             <img src="https://i.imgur.com/rL2HWaA.jpeg" alt="date fix 777 visual 1" loading="lazy">
             <img src="https://i.imgur.com/j0PL1Ay.jpeg" alt="date fix 777 visual 2" loading="lazy">
         </div>
 
-        <!-- telegram channel promo (exact text) -->
-        <div class="telegram-message">
-            <i class="fab fa-telegram-plane"></i> 
-            JOIN TELEGRAM CHANNEL FOR FREE GAME 
-            <i class="fab fa-telegram-plane"></i>
-        </div>
-
-        <!-- big fat action row: Telegram & WhatsApp direct buttons (open in app) -->
+        <!-- direct action row: Telegram & WhatsApp (open in app) -->
         <div class="action-row">
             <!-- telegram direct link -->
             <a href="https://t.me/datefix777" target="_blank" rel="noopener noreferrer" class="btn btn-telegram">
@@ -333,12 +297,12 @@
                 <span style="font-size: 1.5rem; color: #ffe087;">⚡</span> OR CALL <span style="font-size: 1.5rem; color: #ffe087;">⚡</span>
             </span>
             <!-- direct call button (tel: for mobile / pc fallback) -->
-            <a href="tel:+919113224019" class="btn btn-call" style="flex: 0 1 auto; padding: 0.7rem 1.8rem; font-size: 1.3rem;">
+            <a href="tel:+919113224019" class="btn btn-call" style="flex: 0 1 auto;">
                 <i class="fas fa-phone-alt"></i> Call now
             </a>
         </div>
 
-        <!-- extra micro info: both links open directly in app (Telegram / WhatsApp) -->
+        <!-- extra micro info: both links open directly in app -->
         <hr>
         <div class="note-app">
             <span><i class="fas fa-check-circle"></i> Telegram opens in app</span>
@@ -346,12 +310,10 @@
             <span><i class="fas fa-mobile-alt"></i> One tap call</span>
         </div>
 
-        <!-- tiny telegram link fallback (exact link also visible) but not intrusive -->
+        <!-- tiny fallback links (barely visible) -->
         <div style="text-align: center; margin-top: 1.2rem; font-size: 0.9rem; opacity: 0.6; color: #b0b0d0;">
             t.me/datefix777  |  wa.me/919113224019
         </div>
     </div>
-
-    <!-- small note: ensures that telegram & whatsapp links are app-backed. For extra reliability, also support tg:? but https works fine -->
 </body>
 </html>
