@@ -105,7 +105,7 @@
             align-items: center;
             justify-content: center;
             gap: 1.5rem;
-            margin: 2.8rem 0 2rem;
+            margin: 2.8rem 0 1rem;
         }
 
         .btn {
@@ -159,59 +159,6 @@
             box-shadow: 0 20px 30px -8px #25d366, 0 0 0 2px #b7f9cf;
         }
 
-        .whatsapp-text {
-            font-size: 1.2rem;
-            color: #d1d1e6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-            padding: 1.2rem 1.5rem;
-            background: rgba(0, 0, 0, 0.35);
-            border-radius: 60px;
-            backdrop-filter: blur(8px);
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            border: 1px solid #ffd96660;
-        }
-
-        .whatsapp-text .phone-number {
-            font-weight: 700;
-            font-size: 1.5rem;
-            background: linear-gradient(145deg, #fff1b8, #ffd966);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: 2px;
-        }
-
-        .note-app {
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: #7f809b;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .note-app i {
-            color: gold;
-            margin-right: 6px;
-        }
-
-        hr {
-            border: 0.5px solid #ffd96630;
-            margin: 2rem 0 0.5rem;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
         @media (max-width: 600px) {
             .glass-card {
                 padding: 2rem 1.2rem;
@@ -246,7 +193,7 @@
             <img src="https://i.imgur.com/GiRpvP1.jpeg" alt="date fix 777 visual 2" loading="lazy">
         </div>
 
-        <!-- action row: Telegram & WhatsApp (open in app) -->
+        <!-- ONLY WhatsApp and Telegram buttons (no phone, no extra text) -->
         <div class="action-row">
             <a href="https://t.me/datefix777" target="_blank" rel="noopener noreferrer" class="btn btn-telegram">
                 <i class="fab fa-telegram"></i> Telegram channel
@@ -256,23 +203,7 @@
             </a>
         </div>
 
-        <!-- WhatsApp number display (call option removed) -->
-        <div class="whatsapp-text">
-            <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25d366; filter: drop-shadow(0 0 12px #25d366);"></i>
-            <span class="phone-number">+919113224019</span>
-        </div>
-
-        <!-- extra micro info -->
-        <hr>
-        <div class="note-app">
-            <span><i class="fas fa-check-circle"></i> Telegram opens in app</span>
-            <span><i class="fas fa-check-circle"></i> WhatsApp opens in app</span>
-        </div>
-
-        <!-- tiny fallback links -->
-        <div style="text-align: center; margin-top: 1.2rem; font-size: 0.9rem; opacity: 0.6; color: #b0b0d0;">
-            t.me/datefix777  |
-        </div>
+        <!-- (everything else removed – only the two buttons remain) -->
     </div>
 </body>
 </html>
