@@ -26,7 +26,7 @@
         }
 
         .glass-card {
-            max-width: 1200px;      /* slightly larger to accommodate bigger images */
+            max-width: 1200px;
             width: 100%;
             background: rgba(20, 22, 36, 0.7);
             backdrop-filter: blur(16px) saturate(180%);
@@ -37,7 +37,6 @@
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(255, 215, 0, 0.1) inset;
         }
 
-        /* headline */
         .hero-title {
             text-align: center;
             font-size: clamp(2.2rem, 8vw, 4.2rem);
@@ -75,7 +74,6 @@
             margin-right: auto;
         }
 
-        /* image duo — larger now */
         .image-panel {
             display: flex;
             flex-wrap: wrap;
@@ -86,14 +84,14 @@
         }
 
         .image-panel img {
-            width: min(380px, 100%);   /* significantly bigger, up to 380px */
-            height: auto;               /* keep original proportions, no forced square */
+            width: min(380px, 100%);
+            height: auto;
             border-radius: 2.5rem;
             box-shadow: 0 25px 40px -10px black, 0 0 0 2px rgba(255, 200, 70, 0.4), 0 0 30px #ffae0060;
             transition: 0.25s ease-in-out;
             background: linear-gradient(145deg, #2f2f42, #1a1b28);
             padding: 0.35rem;
-            object-fit: cover;          /* covers the area, but respects ratio */
+            object-fit: cover;
         }
 
         .image-panel img:hover {
@@ -101,7 +99,6 @@
             box-shadow: 0 35px 55px -10px #000, 0 0 0 3px #ffc107, 0 0 45px #ffcc33;
         }
 
-        /* action buttons */
         .action-row {
             display: flex;
             flex-wrap: wrap;
@@ -162,20 +159,6 @@
             box-shadow: 0 20px 30px -8px #25d366, 0 0 0 2px #b7f9cf;
         }
 
-        .btn-call {
-            background: linear-gradient(145deg, #352c1f, #221d12);
-            border-color: #ffae42;
-            font-size: 1.3rem;
-            padding: 0.7rem 1.8rem;
-        }
-
-        .btn-call:hover {
-            background: linear-gradient(145deg, #5f4b28, #3e311b);
-            border-color: #ffc285;
-            transform: scale(1.02);
-            box-shadow: 0 0 25px #f5b042;
-        }
-
         .whatsapp-text {
             font-size: 1.2rem;
             color: #d1d1e6;
@@ -205,19 +188,6 @@
             letter-spacing: 2px;
         }
 
-        .or-call-divider {
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-            color: #c9c9e0;
-            font-size: 1.3rem;
-            font-weight: 400;
-        }
-
-        .fa-phone-alt {
-            color: #ffb347;
-        }
-
         .note-app {
             text-align: center;
             margin-top: 2rem;
@@ -242,7 +212,6 @@
             margin-right: auto;
         }
 
-        /* mobile fine-tune */
         @media (max-width: 600px) {
             .glass-card {
                 padding: 2rem 1.2rem;
@@ -253,7 +222,7 @@
                 padding: 1rem 1.5rem;
             }
             .image-panel img {
-                width: 100%;           /* full width on small screens, still large */
+                width: 100%;
                 max-width: 340px;
             }
         }
@@ -271,46 +240,36 @@
             <i class="fas fa-star" style="color: #ffc107; margin-left: 8px;"></i>
         </div>
 
-        <!-- two images – now bigger, join telegram line removed -->
+        <!-- two images -->
         <div class="image-panel">
             <img src="https://i.imgur.com/0hJWpq5.png" alt="date fix 777 visual 1" loading="lazy">
             <img src="https://i.imgur.com/GiRpvP1.jpeg" alt="date fix 777 visual 2" loading="lazy">
         </div>
 
-        <!-- direct action row: Telegram & WhatsApp (open in app) -->
+        <!-- action row: Telegram & WhatsApp (open in app) -->
         <div class="action-row">
-            <!-- telegram direct link -->
             <a href="https://t.me/datefix777" target="_blank" rel="noopener noreferrer" class="btn btn-telegram">
                 <i class="fab fa-telegram"></i> Telegram channel
             </a>
-            <!-- whatsapp direct link (wa.me) -->
             <a href="https://wa.me/919113224019?text=Hello%20DATE%20FIX%20777%2C%20I'm%20interested%20in%20your%20service" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
                 <i class="fab fa-whatsapp"></i> WhatsApp chat
             </a>
         </div>
 
-        <!-- WhatsApp number + OR CALL section exactly as requested -->
+        <!-- WhatsApp number display (call option removed) -->
         <div class="whatsapp-text">
             <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25d366; filter: drop-shadow(0 0 12px #25d366);"></i>
             <span class="phone-number">+919113224019</span>
-            <span class="or-call-divider">
-                <span style="font-size: 1.5rem; color: #ffe087;">⚡</span> OR CALL <span style="font-size: 1.5rem; color: #ffe087;">⚡</span>
-            </span>
-            <!-- direct call button (tel: for mobile / pc fallback) -->
-            <a href="tel:+919113224019" class="btn btn-call" style="flex: 0 1 auto;">
-                <i class="fas fa-phone-alt"></i> Call now
-            </a>
         </div>
 
-        <!-- extra micro info: both links open directly in app -->
+        <!-- extra micro info -->
         <hr>
         <div class="note-app">
             <span><i class="fas fa-check-circle"></i> Telegram opens in app</span>
             <span><i class="fas fa-check-circle"></i> WhatsApp opens in app</span>
-            <span><i class="fas fa-mobile-alt"></i> One tap call</span>
         </div>
 
-        <!-- tiny fallback links (barely visible) -->
+        <!-- tiny fallback links -->
         <div style="text-align: center; margin-top: 1.2rem; font-size: 0.9rem; opacity: 0.6; color: #b0b0d0;">
             t.me/datefix777  |  wa.me/919113224019
         </div>
